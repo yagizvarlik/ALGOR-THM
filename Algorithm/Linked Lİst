@@ -1,0 +1,14 @@
+private void Form1_Load(object sender, EventArgs e)
+        {
+            LinkedList<string> linked = new LinkedList<string>();
+       
+            linked.AddLast("yagiz");
+            linked.AddLast("varlik");
+            linked.AddLast("ali");
+            linked.AddFirst("hello");
+
+            foreach (var item in linked)
+            {
+                MessageBox.Show(item);
+            }
+        }
