@@ -1,15 +1,15 @@
 private void Form1_Load(object sender, EventArgs e)
         {
-            TreeNode treeNode = new TreeNode("Merve Çırak");
+            TreeNode treeNode = new TreeNode("Yagiz Varlik");
             treeView1.Nodes.Add(treeNode);
     
-            treeNode = new TreeNode("Büşra Polat");
+            treeNode = new TreeNode("Ali  Boyaci");
             treeView1.Nodes.Add(treeNode);
 
-            treeNode = new TreeNode("Gökalp Kanlı");
+            treeNode = new TreeNode("Dorukhan Varlik");
             treeView1.Nodes.Add(treeNode);
 
-            treeNode = new TreeNode("Erhan Çınar");
+            treeNode = new TreeNode("Gizem Erinç");
             treeView1.Nodes.Add(treeNode);
 
             TreeNode node2 = new TreeNode("Anne");
