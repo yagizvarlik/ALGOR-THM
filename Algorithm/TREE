@@ -1,0 +1,21 @@
+private void Form1_Load(object sender, EventArgs e)
+        {
+            TreeNode treeNode = new TreeNode("Merve Çırak");
+            treeView1.Nodes.Add(treeNode);
+    
+            treeNode = new TreeNode("Büşra Polat");
+            treeView1.Nodes.Add(treeNode);
+
+            treeNode = new TreeNode("Gökalp Kanlı");
+            treeView1.Nodes.Add(treeNode);
+
+            treeNode = new TreeNode("Erhan Çınar");
+            treeView1.Nodes.Add(treeNode);
+
+            TreeNode node2 = new TreeNode("Anne");
+            TreeNode node3 = new TreeNode("Baba");
+            TreeNode[] array = new TreeNode[] { node2, node3 };
+            
+            treeNode = new TreeNode("Aile", array);
+            treeView1.Nodes.Add(treeNode);
+        }
