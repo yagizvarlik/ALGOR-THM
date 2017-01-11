@@ -1,0 +1,40 @@
+namespace İkili_arama_algoritması
+ {
+ class Program
+ {
+ static void Main(string[] args)
+ {
+ Random r = new Random();
+ int[] sayilar = {1,2,4,7,9,11,15}; // Aranacak Dizi
+ Array.Sort(sayilar); // K=>B sıraladık
+ int aranan = sayilar[r.Next(0,sayilar.Length)];
+ int baslangic = 0;
+ int bitis = sayilar.GetUpperBound(0);
+ int orta = baslangic + bitis / 2;
+ for (int i = 0; i < 10; i++)
+ {
+ while (baslangic <= bitis)
+ {
+ orta = (baslangic + bitis) / 2;
+ if (sayilar[orta] > aranan)
+ {
+ bitis = orta - 1;
+ }
+ else if (sayilar[orta] < aranan)
+ {
+ baslangic = orta + 1;
+ }
+ else
+ {
+ Console.WriteLine((i+1)  + "/10 Aranan Sayı : " + sayilar[orta] + " Bulunan : " + aranan);
+ break;
+ }
+ }
+ aranan = sayilar[r.Next(0, sayilar.Length)];
+ baslangic = 0;
+ bitis = sayilar.GetUpperBound(0);
+ }
+ Console.ReadKey();
+ }
+ }
+ }
